@@ -1,5 +1,5 @@
 {% set name = "itkwasm" %}
-{% set version = "1.0b195" %}
+{% set version = "1.0b199" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/i/itkwasm/itkwasm-{{ version }}.tar.gz
-  sha256: d4e4344a278c11cad68888164f5750c57764f6509b583fb5c49d237c8af48ac5
+  sha256: def5e620c99dc935537287120d3afc405dca71e54b57f1cb44f332bba063d257
 
 # NOTE:
 # This package depends at runtime on wasmtime-py, which includes
@@ -16,7 +16,7 @@ source:
 # as noarch.
 
 build:
-  number: 1
+  number: 0
   script_env:
     - MACOSX_DEPLOYMENT_TARGET=10.15
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
