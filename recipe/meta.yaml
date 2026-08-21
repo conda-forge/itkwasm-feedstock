@@ -1,13 +1,13 @@
 {% set name = "itkwasm" %}
-{% set version = "1.0b200" %}
+{% set version = "1.0b201" %}
 
 package:
   name: {{ name }}
   version: "{{ version }}"
 
 source:
-  url: https://pypi.org/packages/source/i/itkwasm/itkwasm-{{ version }}.tar.gz
-  sha256: be1378366e6db860d161864a1720be987f8bc56e145e6571643cec408e3c538b
+  url: https://files.pythonhosted.org/packages/source/i/itkwasm/itkwasm-{{ version }}.tar.gz
+  sha256: 7f50d17039465b4cbc5707c8ac2116694221377ceb82c6d6b0afd22516ed6ea3
 
 # NOTE:
 # This package depends at runtime on wasmtime-py, which includes
