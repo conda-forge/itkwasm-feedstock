@@ -16,7 +16,7 @@ source:
 # as noarch.
 
 build:
-  number: 0
+  number: 1
   script_env:
     - MACOSX_DEPLOYMENT_TARGET=10.15
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
